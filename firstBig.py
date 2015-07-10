@@ -1,14 +1,17 @@
 #! /bin/python
 import string, os, os.path, math, shutil
 
+# list of directories which need to be synchronized with my machine
 folder_list = ['/home/ramki/Desktop',
                '/home/ramki/Downloads',
                '/home/ramki/Documents',
                '/home/ramki/Pictures']
 
+# Synchronising with my Dropbox directory on my machine
 dropbox_folder = '/home/ramki/Dropbox'
 
 os.chdir("/home/ramki/Dropbox/")
+
 
 def filecreate(folder):
     if folder not in os.listdir(os.getcwd()) :
